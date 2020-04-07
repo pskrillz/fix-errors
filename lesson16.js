@@ -24,11 +24,13 @@ var nameFilter = function(filteredName, anonymousFunction) {
 
         }
     }
-
+    anonymousFunction = function() {
     return results
 }
 
-var filteredNames = nameFilter("Betty", function(name) {
+
+
+var filteredNames = nameFilter("Betty", anonymousFunction) {
     console.log("This Ran")
-})
+}
 console.log(filteredNames)

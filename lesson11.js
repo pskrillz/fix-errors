@@ -13,8 +13,11 @@ var nameFilter = function(filteredName) {
         let name = people[i].name
         if (name != filteredName) {
             results.push(name)
+            
         }
+        
     }
+    return results
 }
 
 var filteredNames = nameFilter("Betty")

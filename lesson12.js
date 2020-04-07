@@ -16,9 +16,11 @@ var nameFilter = function(filteredName) {
     }
     return results
 }
-var selectName = function() {
+var selectName = function(currentName) {
     var currentName = "Betty";
     return currentName
 }
-var filteredNames = nameFilter(currentName)
+
+
+var filteredNames = nameFilter(selectName())
 console.log(filteredNames)
