@@ -14,7 +14,7 @@ var nameFilter = function(filteredName) {
     var results = []
     for (var i = 0; i < people.length; i++) {
         let currentName = people[i].name
-        if (currentName != filteredName) {
+        if (currentName !== filteredName) {
             results.push(currentName)
         }
     }
